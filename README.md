@@ -1,12 +1,56 @@
-# LitElement TypeScript starter
+# SimpleTimeline Web Component 
 
-This project includes a sample component using LitElement with TypeScript.
+![npm version](https://badgen.net/npm/v/@parttio/simple-timeline)](https://www.npmjs.com/package/@parttio/simple-timeline)
+[
+SimpleTimeline is a web component for presenting data points on a horizontal line. It consists of two custom elements built with Lit:
 
-This template is generated from the `lit-starter-ts` package in [the main Lit
-repo](https://github.com/lit/lit). Issues and PRs for this template should be
-filed in that repo.
+The goal is to build a widget for presenting timeline data in an easy, aesthetic, yet opinionated way.  
+
+
+- `<simple-timeline>` - Timeline element itself containing the items. Supports following attributes:
+  - `caption` - The headline caption of the timeline.
+- `<simple-timeline-item>` - A single item on the timeline containg the text. Supports following attributes:
+  - `x` - Relative horizontal position of item on the timeline 0 to 100.
+  - `y` - Vertical position in of item on the timeline -5 to 5.
+
+Following item class names are supported:
+- `primary` - positively emphasized item.
+- `secondary` - down-played item.
+- `error` - negatively emphasized item.
+- `filled` - solid color item circle.
+- `dashed` - dashed line and circe.
+
+
+Example Usage:
+
+```html
+<simple-timeline id="mytimeline" style="width: 800px;" breaks="">
+    <simple-timeline-item x="10" y="-3">Corporate companies: "Big Tocacco"</simple-timeline-item>
+    <simple-timeline-item x="15" y="2">Drug companies: "Big Pharma"</simple-timeline-item>
+    <simple-timeline-item x="25" y="-1">Farming industries: "Big AG"</simple-timeline-item>
+    <simple-timeline-item class="dashed" x="45" y="-2">Automakers: "Big Car"</simple-timeline-item>
+    <simple-timeline-item x="65" y="-1">International Equestrian Federation: "Big Horse"</simple-timeline-item>
+    <simple-timeline-item x="75" y="5">The Board of Pediatric Medicine: "Big Foot"</simple-timeline-item>
+    <simple-timeline-item x="85" y="1">The Mining Industry: "Big Hole"</simple-timeline-item>
+    <simple-timeline-item x="95" y="-4">The American Egg Board: "Big Egg"</simple-timeline-item>
+</simple-timeline>
+```
+
+Adding click event listener:
+```javascript
+document.getElementById("mytimeline").addEventListener('simple-timeline-click', e => {
+    window.alert("Click  on "+e.detail+": "+e.target.children.item(e.detail).textContent);
+})
+```
+
+![Industry nickname silliness](/industry-nicknames.png)
+
 
 ## Setup
+
+(This project is generated from the `lit-starter-ts` package in [the main Lit
+repo](https://github.com/lit/lit). )
+
 
 Install dependencies:
 
