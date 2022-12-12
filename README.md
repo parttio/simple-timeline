@@ -1,7 +1,7 @@
 # SimpleTimeline Web Component 
 
-![npm version](https://badgen.net/npm/v/@parttio/simple-timeline)](https://www.npmjs.com/package/@parttio/simple-timeline)
-[
+[![npm version](https://badgen.net/npm/v/@parttio/simple-timeline)](https://www.npmjs.com/package/@parttio/simple-timeline)
+
 SimpleTimeline is a web component for presenting data points on a horizontal line. It consists of two custom elements built with Lit:
 
 The goal is to build a widget for presenting timeline data in an easy, aesthetic, yet opinionated way.  
