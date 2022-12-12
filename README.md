@@ -43,7 +43,7 @@ document.getElementById("mytimeline").addEventListener('simple-timeline-click', 
 })
 ```
 
-![Industry nickname silliness](industry-nicknames.png)
+![Industry nickname silliness](https://github.com/parttio/simple-timeline/blob/main/industry-nicknames.png)
 
 
 ## Setup
