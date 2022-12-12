@@ -10,7 +10,6 @@ my-element.d.ts.map
 # only generated for size check
 my-element.bundled.js
 .devcontainer/
-industry-nicknames.png
 package-lock.json
 simple-timeline.d.ts
 simple-timeline.d.ts.map
