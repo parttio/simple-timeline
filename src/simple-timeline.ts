@@ -129,7 +129,11 @@ export class SimpleTimelineItem extends LitElement {
     color: var(--simple-timeline-error-color, red);
     --simple-timeline-item-color: var(--simple-timeline-error-color, red);
   }
-  
+
+  :host(.dashed) {
+    --simple-timeline-item-style: dashed;
+  }
+
   :host(.filled) {
     font-variant: bold;
     --simple-timeline-item-fill: currentColor;
