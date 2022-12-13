@@ -115,22 +115,22 @@ export class SimpleTimelineItem extends LitElement {
     transition: all .2s ease-in-out;
   }
 
-  .primary {
+  :host(.primary) {
     color: var(--simple-timeline-highlight-color, blue);
     --simple-timeline-item-color: var(--simple-timeline-highlight-color, blue);
   }
   
-  .secondary {
+  :host(.secondary) {
     color: var(--simple-timeline-dim-color, gray);
     --simple-timeline-item-color: var(--simple-timeline-dim-color, gray);
   }
   
-  .error {
+  :host(.error) {
     color: var(--simple-timeline-error-color, red);
     --simple-timeline-item-color: var(--simple-timeline-error-color, red);
   }
   
-  .filled {
+  :host(.filled) {
     font-variant: bold;
     --simple-timeline-item-fill: currentColor;
     --simple-timeline-item-color: currentColor;
