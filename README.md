@@ -2,6 +2,8 @@
 
 [![npm version](https://badgen.net/npm/v/@parttio/simple-timeline)](https://www.npmjs.com/package/@parttio/simple-timeline)
 
+This is a custom element implementation. For a Vaadin Java implementation check the project at [samie/SimpleTimeline](https://github.com/samie/SimpleTimeline)
+
 SimpleTimeline is a web component for presenting data points on a horizontal line. It consists of two custom elements built with Lit:
 
 The goal is to build a widget for presenting timeline data in an easy, aesthetic, yet opinionated way.  
